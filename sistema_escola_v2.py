@@ -135,8 +135,7 @@ def intercalar_listas(lista1, lista2):
     for i in range(tamanho):
         resultado.append(lista1[i])
         resultado.append(lista2[i])
-    # BUG: não adiciona os elementos restantes da lista maior
-    return resultado
+    return resultado + lista[tamanho: ] + lista2[tamanho: ]
 
 # Função 13 - Implementa busca binária
 # 🐛 BUG: condição do while errada
