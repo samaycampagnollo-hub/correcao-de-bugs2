@@ -157,7 +157,7 @@ def busca_binaria(lista_ordenada, alvo):
 # 🐛 BUG: slice errado, pega os menores em vez dos maiores
 def n_maiores(lista, n):
     """Retorna os N maiores elementos em ordem decrescente."""
-    ordenada = sorted(lista)         # BUG: deveria ser sorted(lista, reverse=True)
+    ordenada = sorted(lista, reverse=True)         
     return ordenada[:n]
 
 # Função 15 - Achata uma lista de listas em uma lista simples
