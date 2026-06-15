@@ -25,7 +25,7 @@ def divisivel_por(numero, divisor):
     """Retorna True se 'numero' for divisível por 'divisor'."""
     if divisor == 0:
         return False
-    return numero // divisor == 0  # BUG: deveria ser %
+    return numero % divisor == 0  
 
 # Função 2 - Calcula a potência sem usar o operador **
 # 🐛 BUG: range errado, faz uma multiplicação a menos
