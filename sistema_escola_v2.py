@@ -85,7 +85,7 @@ def contar_vogais(texto):
 # 🐛 BUG: usa upper() em vez de title()
 def formatar_nome_completo(nome):
     """Retorna o nome com a primeira letra de cada palavra em maiúsculo."""
-    return nome.upper()  # BUG: deveria ser nome.title()
+    return nome.title()  
 
 # Função 8 - Remove espaços duplicados de um texto
 # 🐛 BUG: split sem argumento e join estão corretos, mas o join usa vírgula
