@@ -337,7 +337,7 @@ def gerar_boletim(nome, notas_bimestres):
 def calcular_frequencia(aulas_dadas, faltas):
     """Retorna o percentual de frequência do aluno."""
     presencas = aulas_dadas - faltas
-    percentual = (presencas / aulas_dadas) * 10   # BUG: deveria ser * 100
+    percentual = (presencas / aulas_dadas) * 100  
     return round(percentual, 2)
 
 # Função 28 - Retorna o ranking de alunos por nota (maior primeiro)
