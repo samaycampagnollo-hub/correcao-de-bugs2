@@ -41,7 +41,7 @@ def potencia(base, expoente):
 def listar_divisores(n):
     """Retorna uma lista com todos os divisores de n."""
     divisores = []
-    for i in range(1, n):  # BUG: deveria ser range(1, n + 1)
+    for i in range(1, n + 1):  
         if n % i == 0:
             divisores.append(i)
     return divisores
