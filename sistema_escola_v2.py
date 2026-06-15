@@ -236,8 +236,8 @@ def estatisticas_notas(notas):
     """Retorna um dicionário com média, maior e menor nota."""
     return {
         "media": sum(notas) / len(notas),
-        "maior": min(notas),   # BUG: deveria ser max(notas)
-        "menor": max(notas),   # BUG: deveria ser min(notas)
+        "maior": max(notas),   
+        "menor": min(notas),   
     }
 
 # Função 22 - Classifica aluno com base em média e frequência
