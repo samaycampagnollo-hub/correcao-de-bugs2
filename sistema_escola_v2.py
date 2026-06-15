@@ -32,7 +32,7 @@ def divisivel_por(numero, divisor):
 def potencia(base, expoente):
     """Calcula base elevado a expoente usando multiplicação."""
     resultado = 1
-    for _ in range(expoente - 1):  # BUG: deveria ser range(expoente)
+    for _ in range(expoente):  
         resultado *= base
     return resultado
 
