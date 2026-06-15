@@ -133,9 +133,9 @@ def intercalar_listas(lista1, lista2):
     resultado = []
     tamanho = min(len(lista1), len(lista2))
     for i in range(tamanho):
-        resultado.append(lista1[i])
-        resultado.append(lista2[i])
-    return resultado + lista[tamanho: ] + lista2[tamanho: ]
+        resultado.extend(lista1:[tamanho])
+        resultado.extend(lista2:[tamanho])
+    return resultado 
 
 # Função 13 - Implementa busca binária
 # 🐛 BUG: condição do while errada
