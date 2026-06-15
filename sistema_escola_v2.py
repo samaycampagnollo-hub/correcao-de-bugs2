@@ -180,7 +180,7 @@ def inverter_dicionario(dicionario):
     """Retorna um novo dicionário com chaves e valores trocados."""
     novo = {}
     for chave, valor in dicionario.items():
-        novo[chave] = valor  # BUG: deveria ser novo[valor] = chave
+        novo[valor] = chave  
     return novo
 
 # Função 17 - Mescla dois dicionários (o segundo sobrescreve o primeiro)
