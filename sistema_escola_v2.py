@@ -92,7 +92,7 @@ def formatar_nome_completo(nome):
 def remover_espacos_duplos(texto):
     """Remove espaços extras, deixando apenas um espaço entre palavras."""
     palavras = texto.split()
-    return ",".join(palavras)  # BUG: deveria ser " ".join(palavras)
+    return " ".join(palavras)  
 
 # Função 9 - Censura palavras proibidas substituindo por asteriscos
 # 🐛 BUG: substitui pela palavra proibida em vez de asteriscos
