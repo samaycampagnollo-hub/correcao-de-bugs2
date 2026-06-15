@@ -121,7 +121,7 @@ def remover_duplicatas(lista):
     vistos = []
     resultado = []
     for item in lista:
-        if item in vistos:  # BUG: deveria ser "not in"
+        if item not in vistos:  
             vistos.append(item)
             resultado.append(item)
     return resultado
