@@ -249,7 +249,7 @@ def classificar_aluno(media, frequencia):
     - 'Reprovado por falta': frequência < 75
     - 'Reprovado por nota': média < 6
     """
-    if media >= 6 or frequencia >= 75:  # BUG: deveria ser AND
+    if media >= 6 and frequencia >= 75: 
         return "Aprovado"
     elif frequencia < 75:
         return "Reprovado por falta"
