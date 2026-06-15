@@ -166,7 +166,7 @@ def achatar_lista(lista_de_listas):
     """Transforma [[1,2],[3,4]] em [1,2,3,4]."""
     resultado = []
     for sublista in lista_de_listas:
-        resultado.append(sublista)  # BUG: deveria ser resultado.extend(sublista)
+        resultado.extend(sublista)  
     return resultado
 
 
