@@ -61,7 +61,7 @@ def eh_primo(n):
 # 🐛 BUG: caso base errado, causa recursão infinita ou resultado errado
 def fatorial(n):
     """Retorna o fatorial de n usando recursão."""
-    if n == 1:  # BUG: deveria ser n == 0 ou n <= 1
+    if n == 0 or n <= 1:  
         return 1
     return n * fatorial(n - 1)
 
